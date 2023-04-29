@@ -39,7 +39,7 @@ https://github.com/JRissanen/h1-OmaLabra
 
 ---
 
-## x) Lue ja tiivistä (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva. Cheatsheetistä voit poimia muutaman itselle relevantin kohdan.)
+## x) Lue ja tiivistä (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
 ### Cialdinin suostuttelun periaatteet (haluamastasi lähteestä)
 
@@ -66,6 +66,31 @@ Cialdinin tutkimusten mukaan on olemassa __kuusi__ pääperiaatetta, jotka vaiku
    - Ihmiset (etenkin kun ovat epävarmoja) usein ottavat muista ihmisistä mallia tehdessään omaa päätöstänsä.
 
 ### PortSwigger: [SQL injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks)
+
+* `UNION` -avainsana mahdollistaa yhden tai useamman ylimääräisen `SELECT` -kyselyn suorittamisen ja tulosten liittämisen alkuperäiseen kyselyyn.
+* Esim. `SELECT a, b FROM table1 UNION SELECT c, d FROM table2`
+   * Tämä UNION -hyökkäys palauttaisi vastauksena yhden tulostaulukon kahdella sarakkeella, jotka sisältävät arvoja `table1` sarakkeista `a` ja `b` sekä `table2` sarakkeista `c` ja `d`.
+
+* Kaksi vaatimusta, jotta UNION -hyökkäys onnistuu:
+   * Yksittäisten kyselyiden on palautettava sama määrä sarakkeita.
+   * Jokaisen sarakkeen tietotyypin (datatype) on oltava yhteensopiva yksittäisten kyselyiden välillä.
+
+* Kaksi tehokasta tapaa saada sarakkeiden määrä selville:
+   * Ensimmäinen tapa on syöttää `' ORDER BY 1--` ja sen jälkeen `' ORDER BY 2--` jne. kunnes järjestelmä palauttaa virheilmoituksen, tai ei palauta enää mitään.
+   * Toinen tapa on syöttää `' UNION SELECT NULL--` ja sen jälkeen `' UNION SELECT NULL,NULL--` jne. kunnes järjestelmä palauttaa virheilmoituksen, tai ei palauta enää mitään.
+
+### PortSwigger: [SQL injection cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)(Cheatsheetistä voit poimia muutaman itselle relevantin kohdan.)
+
+* SQL -kyselyiden loppuosien pois kommentointi:
+   * Parametri: `--` toimii lähes kaikissa tietokannoissa.
+    * Vaihtoehtoisia tapoja voi olla: `#` ja `-- <välilyönti>`.
+
+* Kaikkien tietokannan taulukoiden ja niiden sarakkeiden listaaminen:
+   * Onnistuu jokaisessa tietokannassa komennolla: `SELECT * FROM` alkuosalla.
+
+---
+
+## a) Kalassa. Laadi keihäskalasteluviesti (spear phising) kuvitteelliselle yritykselle. Tavoitteena on saada kohde avaamaan liitteenä oleva Excel-dokumentti ja laittamaan makrot päälle. Käytä ainakin kahta Cialdinin periaatetta. Selitä, miten näitä periaatteita on sovellettu viestiisi. Keksi skennario ja kohde itse. Käytä työssä vain kuvitteellisia yrityksiä ja henkilöitä. Viestiä ei lähetetä mihinkään, se tulee vain raporttiin. Liitteenä olevaa Excel-dokumenttia ei tarvitse tehdä, mutta jos siinä on jotain nokkelaa, voit kuvailla, mitä se olisi.
 
 
 
