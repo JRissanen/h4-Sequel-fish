@@ -43,7 +43,14 @@ https://github.com/JRissanen/h1-OmaLabra
 
 ### Cialdinin suostuttelun periaatteet (haluamastasi lähteestä)
 
-Valitsin artikkelin [THE SCIENCE OF PERSUASION, Seven Principles of Persuasion](https://www.influenceatwork.com/7-principles-of-persuasion/), koska sen on julkaissut itse Robert Cialdini yhdessä [INFLUENCE AT WORK (IAW®)](https://www.influenceatwork.com/about-iaw/) tiiminsä kanssa, joten ajattelin, että suoraan Cialdinilta saisi parhaiten aiheesta irti.
+Valitsin artikkelin [THE SCIENCE OF PERSUASION, Seven Principles of Persuasion](https://www.influenceatwork.com/7-principles-of-persuasion/), koska sen on julkaissut itse Robert Cialdini yhdessä [INFLUENCE AT WORK (IAW®)](https://www.influenceatwork.com/about-iaw/) tiiminsä kanssa. Ajattelin, että suoraan Cialdinilta itseltään saisi parhaiten aiheesta irti ja että se olisi hänen kirjoittamanaan parhaiten selitetty.
+
+Cialdinin tutkimusten mukaan on olemassa __seitsemän__ pääasiaa, jotka vaikuttavat ihmisten päätöstentekoon.
+
+1. Vastavuoroisuus (Reciprocity)
+* Ihmiset tuntevat velvollisuuden antaa takaisin saman arvoinen palvelus, lahja tai kehu, jonka ovat itse ensin saaneet.
+
+2. 
 
 
 
@@ -77,6 +84,9 @@ Valitsin artikkelin [THE SCIENCE OF PERSUASION, Seven Principles of Persuasion](
 ## Lähteet
 https://terokarvinen.com/2023/tunkeutumistestaus-2023-kevat/#h4-sequel-fish </br>
 https://www.influenceatwork.com/7-principles-of-persuasion/ </br>
+https://www.influenceatwork.com/about-iaw/ </br>
+
+
 
 
 
