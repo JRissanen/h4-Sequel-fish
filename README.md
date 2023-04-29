@@ -45,13 +45,27 @@ https://github.com/JRissanen/h1-OmaLabra
 
 Valitsin artikkelin [THE SCIENCE OF PERSUASION, Seven Principles of Persuasion](https://www.influenceatwork.com/7-principles-of-persuasion/), koska sen on julkaissut itse Robert Cialdini yhdessä [INFLUENCE AT WORK (IAW®)](https://www.influenceatwork.com/about-iaw/) tiiminsä kanssa. Ajattelin, että suoraan Cialdinilta itseltään saisi parhaiten aiheesta irti ja että se olisi hänen kirjoittamanaan parhaiten selitetty.
 
-Cialdinin tutkimusten mukaan on olemassa __seitsemän__ pääasiaa, jotka vaikuttavat ihmisten päätöstentekoon.
+Cialdinin tutkimusten mukaan on olemassa __kuusi__ pääperiaatetta, jotka vaikuttavat ihmisten päätöstentekoon.
 
 1. Vastavuoroisuus (Reciprocity) </br>
    - Ihmiset tuntevat velvollisuuden antaa takaisin saman arvoinen palvelus, lahja tai kehu, jonka ovat itse ensin saaneet.
 
-2. 
+2. Vähäinen saatavuus (Scarcity)
+   - Ihmiset haluvavat enemmän niitä asioita, joita on vähemmän saatavilla.
 
+3. Auktoriteetti (Authority)
+   - Ihmiset seuraavat uskottavien/tunnettujen, "paljon tietävien" ammattilaisten ohjeistuksia sekä auktoriteetin omaavia henkilöitä kuten poliiseja.
+
+4. Jatkuvuus/pysyvyys (Consistency)
+   - Ihmiset haluvat olla johdonmukaisia aiempien päätöstensä kanssa, eli he ovat todennäköisempiä jatkamaan aiempia sitoumuksiaan.
+
+5. Tykkääminen (Liking)
+   - Ihmiset ovat taipuvaisia myöntymään asioihin, kun kyseessä on henkilö, josta he pitävät (samaistuminen, kohteliaisuus, yhteinen tavoite).
+
+6. Sosiaalinen todiste (Social Proof)
+   - Ihmiset (etenkin kun ovat epävarmoja) usein ottavat muista ihmisistä mallia tehdessään omaa päätöstänsä.
+
+### PortSwigger: [SQL injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks)
 
 
 
@@ -85,6 +99,7 @@ Cialdinin tutkimusten mukaan on olemassa __seitsemän__ pääasiaa, jotka vaikut
 https://terokarvinen.com/2023/tunkeutumistestaus-2023-kevat/#h4-sequel-fish </br>
 https://www.influenceatwork.com/7-principles-of-persuasion/ </br>
 https://www.influenceatwork.com/about-iaw/ </br>
+https://portswigger.net/web-security/sql-injection/union-attacks </br>
 
 
 
