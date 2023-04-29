@@ -47,8 +47,8 @@ Valitsin artikkelin [THE SCIENCE OF PERSUASION, Seven Principles of Persuasion](
 
 Cialdinin tutkimusten mukaan on olemassa __seitsemän__ pääasiaa, jotka vaikuttavat ihmisten päätöstentekoon.
 
-1. Vastavuoroisuus (Reciprocity)
-  * Ihmiset tuntevat velvollisuuden antaa takaisin saman arvoinen palvelus, lahja tai kehu, jonka ovat itse ensin saaneet.
+1. Vastavuoroisuus (Reciprocity) </br>
+   - Ihmiset tuntevat velvollisuuden antaa takaisin saman arvoinen palvelus, lahja tai kehu, jonka ovat itse ensin saaneet.
 
 2. 
 
