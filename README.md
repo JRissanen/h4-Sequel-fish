@@ -116,7 +116,7 @@ Sähköposti näyttäisi jotakuinkin seuraavalta:
 >
 >
 >
->Ystävällisin terveisin,
+>Ystävällisin terveisin, </br>
 >Kalaveikot Oy
 
 Näin saattaisin saada Simon klikkaamaan naamioimaani haitallista linkkiä.
