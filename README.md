@@ -102,17 +102,19 @@ Naamioisin kalastelusähköpostin näyttämään mahdollisimman paljon joltakin 
 
 Sähköposti näyttäisi jotakuinkin seuraavalta:
 
-> Lähettäjä: kala.veikot@kalaveikot.com
+> Lähettäjä: kala.veikot@kalaveikot.com </br>
 > Vastaanottaja: simo.mottonen@tieto&turva.com
 >-
 >-
 >-
->Terve Simo!
+>Terve Simo! </br>
 >Olemme keränneet tähän uutiskirjeeseen alennustuotteita, jotka saattaisivat kiinnostaa sinua aiempien ostostesi perusteella:
->-
->(kuvia virveleistä ja syöteistä yms kalastustarvikkeista)
+>
+>
+>(kuvia virveleistä ja syöteistä yms kalastustarvikkeista) </br>
 >Katso koko tarjouskatalogimme [tästä linkistä](https://github.com/JRissanen/h4-Sequel-fish/edit/main/README.md)
->-
+>
+>
 >Ystävällisin terveisin,
 >Kalaveikot Oy
 
