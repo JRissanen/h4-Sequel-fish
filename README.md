@@ -79,7 +79,7 @@ Cialdinin tutkimusten mukaan on olemassa __kuusi__ pääperiaatetta, jotka vaiku
    * Ensimmäinen tapa on syöttää `' ORDER BY 1--` ja sen jälkeen `' ORDER BY 2--` jne. kunnes järjestelmä palauttaa virheilmoituksen, tai ei palauta enää mitään.
    * Toinen tapa on syöttää `' UNION SELECT NULL--` ja sen jälkeen `' UNION SELECT NULL,NULL--` jne. kunnes järjestelmä palauttaa virheilmoituksen, tai ei palauta enää mitään.
 
-### PortSwigger: [SQL injection cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)(Cheatsheetistä voit poimia muutaman itselle relevantin kohdan.)
+### PortSwigger: [SQL injection cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet) (Cheatsheetistä voit poimia muutaman itselle relevantin kohdan.)
 
 * SQL -kyselyiden loppuosien pois kommentointi:
    * Parametri: `--` toimii lähes kaikissa tietokannoissa.
