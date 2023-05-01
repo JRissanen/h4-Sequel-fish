@@ -108,7 +108,7 @@ Sähköposti näyttäisi jotakuinkin seuraavalta:
 >
 >
 >Terve Simo! </br>
->Olemme keränneet tähän uutiskirjeeseen alennustuotteita, jotka saattaisivat kiinnostaa sinua aiempien ostostesi perusteella:
+>Olemme keränneet tähän uutiskirjeeseen alennustuotteita, jotka saattaisivat kiinnostaa sinua aiempien ostoksiesi perusteella:
 >
 >
 >(kuvia virveleistä ja syöteistä yms kalastustarvikkeista) </br>
@@ -119,7 +119,11 @@ Sähköposti näyttäisi jotakuinkin seuraavalta:
 >Ystävällisin terveisin,
 >Kalaveikot Oy
 
+Näin saattaisin saada Simon klikkaamaan naamioimaani haitallista linkkiä.
 
+---
+
+## b) SQL injection vulnerability allowing login bypass.
 
 
 
