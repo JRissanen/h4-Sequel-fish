@@ -133,22 +133,18 @@ Kerratessani aiempaa PortSwiggerin artikkelia [SQL -injektioista](https://portsw
 
 Syötin siis `SELECT * FROM users WHERE username = 'administrator'--' AND password = ''`, mutta yllätyksekseni se ei toiminut.
 
-![Screenshot_3](https://user-images.githubusercontent.com/116954333/235473970-47e7b768-0572-4282-8c3e-a33a5ac41952.png)
-
 Kokeilin muutamalla eri tavalla, kuten ottaa lopusta `AND password = ''` kohdan pois, mutta mikään ei toiminut. </br>
 Päätin sitten katsoa ratkaisun: 
 
-![Screenshot_4](https://user-images.githubusercontent.com/116954333/235474435-c3d12581-019a-4f50-bd2c-885bf2c6a586.png)
-
 Ilmeisesti labran ratkaisu vaatii Burp Suiten käyttämistä, joten avasin sen, koska kali:ssa tulee Burp Suite Community Edition valmiiksi asennettuna.
 
-![Screenshot_5](https://user-images.githubusercontent.com/116954333/235477723-429e01ec-7403-4d08-86e1-a268767a18c9.png)
 
 Valitsin Burp Suite:ssa: Temporary Project -> Use Burp defaults -> Start Burp. </br>
 Sen jälkeen: Proxy -> Open browser -> Intercept is on. </br>
 Näin sain kaapattua labran liikenteen tehtävän ratkaisun haluamalla tavalla, Burp Suiten avulla.
 
-![Screenshot_6](https://user-images.githubusercontent.com/116954333/235477761-9e5487da-5d64-4a9b-b41e-2bf8dd7de115.png)
+
+
 
 
 
