@@ -123,8 +123,11 @@ Näin saattaisin saada Simon klikkaamaan naamioimaani haitallista linkkiä.
 
 ---
 
-## b) SQL injection vulnerability allowing login bypass.
+## b) [SQL injection vulnerability allowing login bypass](https://portswigger.net/web-security/all-labs).
 
+Aloitin lukemalla ohjeet, joista näin että labran ratkaistakseen pitää päästä kirjautumaan sisään "administrator" käyttäjänä haavoittuvaisen "login" fubktion kautta. En vielä tässä vaiheessa katso ratkaisua, vaan vasta jos jään jumiin.
+
+![Screenshot_1](https://user-images.githubusercontent.com/116954333/235458831-fa607bb7-4ccf-417f-a176-7f9e4010329f.png)
 
 
 
@@ -155,6 +158,9 @@ https://terokarvinen.com/2023/tunkeutumistestaus-2023-kevat/#h4-sequel-fish </br
 https://www.influenceatwork.com/7-principles-of-persuasion/ </br>
 https://www.influenceatwork.com/about-iaw/ </br>
 https://portswigger.net/web-security/sql-injection/union-attacks </br>
+https://portswigger.net/web-security/all-labs </br>
+
+
 
 
 
