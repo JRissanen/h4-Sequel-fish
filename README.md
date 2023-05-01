@@ -98,11 +98,25 @@ Oletetaan, että Tieto & Turva Oy:n sivuilla on lueteltu yrityksen työntekijät
 
 Tieto & Turva Oy:lla on töissä Simo Möttönen, jonka lempi harrastuksiin kuuluu kalastaminen ja hänen viimeisimmässään Instagram päivityksessä Simo valitti kuinka vanhalla virvelillä ei saa enää kaloja yhtä hyvin kuin 20 vuotta sitten.
 
-Naamioisin kalastelusähköpostin näyttämään mahdollisimman paljon joltakin tunnetulta kalastustarvikkeita myyvältä yritykseltä, näin ollen hyödyntäisin Cialdinin periaatteista tykkäämis- sekä auktoriteettiperiaatetta.
+Naamioisin kalastelusähköpostin näyttämään mahdollisimman paljon joltakin tunnetulta kalastustarvikkeita myyvältä yritykseltä, jolta olettaisin Simon ennenkin ostaneen jotain. Näin ollen hyödyntäisin Cialdinin periaatteista tykkäämis- sekä auktoriteettiperiaatetta.
 
-**
-dlfsjgskldfjg
-**
+Sähköposti näyttäisi jotakuinkin seuraavalta:
+
+> Lähettäjä: kala.veikot@kalaveikot.com
+> Vastaanottaja: simo.mottonen@tieto&turva.com
+>-
+>-
+>-
+>Terve Simo!
+>Olemme keränneet tähän uutiskirjeeseen alennustuotteita, jotka saattaisivat kiinnostaa sinua aiempien ostostesi perusteella:
+>-
+>(kuvia virveleistä ja syöteistä yms kalastustarvikkeista)
+>Katso koko tarjouskatalogimme [tästä linkistä](https://github.com/JRissanen/h4-Sequel-fish/edit/main/README.md)
+>-
+>Ystävällisin terveisin,
+>Kalaveikot Oy
+
+
 
 
 
