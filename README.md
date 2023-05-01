@@ -131,18 +131,25 @@ Aloitin lukemalla ohjeet, joista näin että labran ratkaistakseen pitää pää
 
 Kerratessani aiempaa PortSwiggerin artikkelia [SQL -injektioista](https://portswigger.net/web-security/sql-injection) huomasin siellä ratkaisun tähän labraan puolivahingossa ja ajattelin sitten koittaa sitä kun kerran sen sieltä löysin.
 
-Syötin siis `SELECT * FROM users WHERE username = 'administrator'--' AND password = ''`, mutta yllätyksekseni se ei toiminut.
+![Screenshot_2](https://user-images.githubusercontent.com/116954333/235494310-bd335808-f4b0-4734-9325-3628412aebed.png)
+
+Syötin siis `SELECT * FROM users WHERE username = 'administrator'--' AND password = ''` ja salasanaan laitoin välilyönnin tai `'` merkin, mutta yllätyksekseni tämä ratkaisu ei toiminut. Tulokseksi tuli vain "Internal Server Error" tai "Missing parameter".
+
+![Screenshot_5](https://user-images.githubusercontent.com/116954333/235495629-212d321b-41c9-4c37-863d-444db546e6ba.png) </br>
+![Screenshot_5](https://user-images.githubusercontent.com/116954333/235495635-9bf24368-beca-4792-bc1e-e2f29653a6d2.png)
 
 Kokeilin muutamalla eri tavalla, kuten ottaa lopusta `AND password = ''` kohdan pois, mutta mikään ei toiminut. </br>
 Päätin sitten katsoa ratkaisun: 
 
-Ilmeisesti labran ratkaisu vaatii Burp Suiten käyttämistä, joten avasin sen, koska kali:ssa tulee Burp Suite Community Edition valmiiksi asennettuna.
+![Screenshot_3](https://user-images.githubusercontent.com/116954333/235494832-0d72e22d-1349-48a8-8586-91a8cc458085.png)
 
+Ilmeisesti labran ratkaisu vaatii Burp Suiten käyttämistä, joten avasin sen, koska kali:ssa tulee Burp Suite Community Edition valmiiksi asennettuna.
 
 Valitsin Burp Suite:ssa: Temporary Project -> Use Burp defaults -> Start Burp. </br>
 Sen jälkeen: Proxy -> Open browser -> Intercept is on. </br>
-Näin sain kaapattua labran liikenteen tehtävän ratkaisun haluamalla tavalla, Burp Suiten avulla.
+Näin sain kaapattua labran liikenteen, ratkaisun haluamalla tavalla, Burp Suiten avulla.
 
+![Screenshot_6](https://user-images.githubusercontent.com/116954333/235496998-18dd7db0-d45c-48dd-835a-5bbacddd9233.png)
 
 
 
