@@ -92,8 +92,17 @@ Cialdinin tutkimusten mukaan on olemassa __kuusi__ pääperiaatetta, jotka vaiku
 
 ## a) Kalassa. Laadi keihäskalasteluviesti (spear phising) kuvitteelliselle yritykselle. Tavoitteena on saada kohde avaamaan liitteenä oleva Excel-dokumentti ja laittamaan makrot päälle. Käytä ainakin kahta Cialdinin periaatetta. Selitä, miten näitä periaatteita on sovellettu viestiisi. Keksi skennario ja kohde itse. Käytä työssä vain kuvitteellisia yrityksiä ja henkilöitä. Viestiä ei lähetetä mihinkään, se tulee vain raporttiin. Liitteenä olevaa Excel-dokumenttia ei tarvitse tehdä, mutta jos siinä on jotain nokkelaa, voit kuvailla, mitä se olisi.
 
+Skenaario voisi olla vaikka kuvitteellisen yrityksen "Tieto & Turva Oy" osakkeiden arvon romauttaminen, jotta sen kilpailevien yritysten osakkeiden arvo puolestaan nousisi. Itse tottakai sijoittaisin ensin rahaa johnkin kilpailevaan yritykseen ja sen jälkeen vasta lähettäisin kalasteluviestin. Kun kalastelu onnistuisi, ja sana tapahtumasta leviäisi, niin siitä seuraisi tietoturva-alan yritykselle iso kolahdus imagoon ja osakkeisiin.
 
+Oletetaan, että Tieto & Turva Oy:n sivuilla on lueteltu yrityksen työntekijät. Perehtyisin kyseisiin työntekijöihin heidän sosiaalisten mediakanavien kautta ja ottaisin selvää, että kuka olisi todennäköisin heistä klikkaamaan linkkiä sähköpostissa ja minkä takia.
 
+Tieto & Turva Oy:lla on töissä Simo Möttönen, jonka lempi harrastuksiin kuuluu kalastaminen ja hänen viimeisimmässään Instagram päivityksessä Simo valitti kuinka vanhalla virvelillä ei saa enää kaloja yhtä hyvin kuin 20 vuotta sitten.
+
+Naamioisin kalastelusähköpostin näyttämään mahdollisimman paljon joltakin tunnetulta kalastustarvikkeita myyvältä yritykseltä, näin ollen hyödyntäisin Cialdinin periaatteista tykkäämis- sekä auktoriteettiperiaatetta.
+
+**
+dlfsjgskldfjg
+**
 
 
 
