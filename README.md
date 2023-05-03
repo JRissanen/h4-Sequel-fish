@@ -164,6 +164,16 @@ Kun pääsin neljään asti, verkkosivu antoi "Internal Server Errorin", joten p
 
 ![Screenshot_4](https://user-images.githubusercontent.com/116954333/235916548-8d70d1ea-2c28-467e-850f-1e49fc276518.png)
 
+Seuraavaksi koitin syöttää hakukenttään: `'+UNION+SELECT+NULL,NULL,NULL--`, jotta saisin labran ohjeistuksen mukaan tietokannan palauttamaan yhden ylimääräisen rivin, joka sisältää `null` arvoja. Ja labra meni tällä syötteellä läpi.
+
+![Screenshot_5](https://user-images.githubusercontent.com/116954333/235918623-62cee88d-7162-4573-9736-621035aee16a.png)
+
+---
+
+## d) SQL injection UNION attack, finding a column containing text.
+
+
+
 
 
 
