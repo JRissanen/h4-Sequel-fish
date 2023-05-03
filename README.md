@@ -159,7 +159,7 @@ Syötin siis hakukenttään: `category='+ORDER+BY+1--`.
 
 ![Screenshot_3](https://user-images.githubusercontent.com/116954333/235915113-57e0917a-b75e-4638-876d-29c1a14297c9.png)
 
-Tästä ei seurannut mitään ihmeellistä tulostusta, mutta artikkelissa sanottiin, että pitäisi syöttää samaa syötettä, mutta korottaa vain viimeistä numeroa aina yhdellä, kunnes verkkosivu antaa virhetulostuksen, tai ei tulosta enää mitääm, joten kokeilin sitä suraavaksi. </br>
+Tästä ei seurannut mitään ihmeellistä tulostusta, mutta artikkelissa sanottiin, että pitäisi syöttää samaa syötettä, mutta korottaa vain viimeistä numeroa aina yhdellä, kunnes verkkosivu antaa virhetulostuksen, tai ei tulosta enää mitään, joten kokeilin sitä suraavaksi. </br>
 Kun pääsin neljään asti, verkkosivu antoi "Internal Server Errorin", joten päättelin, että tietokannassa on kolme saraketta.
 
 ![Screenshot_4](https://user-images.githubusercontent.com/116954333/235916548-8d70d1ea-2c28-467e-850f-1e49fc276518.png)
@@ -171,6 +171,41 @@ Seuraavaksi koitin syöttää hakukenttään: `'+UNION+SELECT+NULL,NULL,NULL--`,
 ---
 
 ## d) SQL injection UNION attack, finding a column containing text.
+
+Aloitin lukemalla labran ohjeistuksen.
+
+![Screenshot_1](https://user-images.githubusercontent.com/116954333/235924376-ba6cdd64-a362-4b29-a507-fc43e9673f68.png)
+
+Labra vaikuttaisi olevan saman tyylinen kuin edellinnenkin. </br>
+Tällä kertaa pitää vain saada labran antama satunnainen arvo näkyviin tulosteessa, eikä ylimääräistä "null" -arvoa. </br>
+Avasin labran ja satunnainen merkkijono, jonka labra halusi minun noutavan tietokannasta oli "W1ekNs". </br>
+Ajattelin aloittaa samalla tavalla haavoittuvuuden etsinnän, eli kohdasta "Corporate gifts" ja verkkosivun hakukentästä.
+
+![Screenshot_2](https://user-images.githubusercontent.com/116954333/235928629-ac54b9d2-9b5f-429b-836a-50764aa1f52c.png)
+
+Ensiksi ajattelin vain kokeilla syötettä: `'+UNION+SELECT+'W1ekNs'--`. </br>
+Se antoi kuitenkin vain "Internal Server Errorin". </br>
+Kokeilin taas `'+ORDER+BY+1--` jne. ja tulos oli sama kuin viime tehtävässä, eli neljän kohdalla tuli virhettä, joten pitäisi olla kolme saraketta. </br>
+Kokeilin myös `'+UNION+SELECT+NULL--` ja lisäsin aina yhden `NULL` lisää, eli sama logiikka kuin `' ORDER BY 1`. </br>
+Syötteellä `'+UNION+SELECT+NULL,NULL,NULL--` verkkosivu ei tulostanut enää "Internal Server Erroria", vaan normaalin tulosteen, joten ajattelin, että kolmannessa sarakkeessa olisi silloin jotain erilaista, kuin kahdessa muussa. (En ole varma oliko havainto oleellinen).
+
+Luin samaa [SQL injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks) artikkelia uudestaan ja huomasin kohdan:
+
+![Screenshot_3](https://user-images.githubusercontent.com/116954333/235939462-5ba6ec73-4603-46f1-a8bd-5edbdc6cf568.png)
+
+Eli UNION -hyökkäyksiin voi syöttää tietoa etsiessä merkkijonoja `'a'` syntaksilla eri sarakkeiden kohdalle. </br>
+Aiempien kokeilujeni perusteella tiedän, että tietokannassa on kolme saraketta, joten lähdin koittamaan merkkijonoa "W1ekNs" eri sarakkeisiin artikkelin ohjeistaman logiikan mukaan. </br>
+Syötin siis aluksi: `'+UNION+SELECT+NULL,NULL,'W1ekNs'--`. Se ei mennyt läpi. </br>
+Seuraavaksi koitin: `'+UNION+SELECT+NULL,'W1ekNs',NULL--`, ja sillä syötteellä labra ratkesi. </br>
+Eli toinen sarake oli se, joka oli haavoittuvainen.
+
+![Screenshot_4](https://user-images.githubusercontent.com/116954333/235941841-b41b58cc-c7dd-4284-a2a1-28da0932e683.png)
+
+---
+
+## e) SQL injection UNION attack, retrieving data from other tables.
+
+
 
 
 
