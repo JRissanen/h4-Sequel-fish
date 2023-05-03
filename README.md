@@ -150,7 +150,7 @@ Aloitin lukemalla labran ohjeistuksen.
 Labran ratkaisuun vaaditaan siis UNION -hyökkäyksen käyttämistä, jotta saadaan selville sarakkeiden määrä. </br>
 Ohjeistuksessa myös mainitaan, että sivun haavoittuvuus on tuotteiden kategoarialajittelijassa (product category filter).
 
-Aloitin avaamalla labran ja valitsemalla etusivulta "Corporate gifts" välilehden, jolloin huomasin hakukentän tekstissä `/filter?category=Corporate+gifts` osion, ja ajattelin, että siitä on hyvä lähteä kokeilemaan haavoittuvuuden löytymistä.
+Aloitin avaamalla labran ja valitsemalla etusivulta "Corporate gifts" välilehden, jolloin huomasin hakukentän tekstissä osion: </br> `/filter?category=Corporate+gifts` ja ajattelin, että siitä on hyvä lähteä kokeilemaan haavoittuvuuden löytymistä.
 
 ![Screenshot_2](https://user-images.githubusercontent.com/116954333/235913070-cf68a054-40d9-4d61-9365-c914e8780971.png)
 
