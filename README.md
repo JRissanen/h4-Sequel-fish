@@ -111,8 +111,12 @@ Sähköposti näyttäisi jotakuinkin seuraavalta:
 >Olemme keränneet tähän uutiskirjeeseen alennustuotteita, jotka saattaisivat kiinnostaa sinua aiempien ostoksiesi perusteella:
 >
 >
->(kuvia virveleistä ja syöteistä yms kalastustarvikkeista) </br>
->Katso koko tarjouskatalogimme [tästä linkistä](https://github.com/JRissanen/h4-Sequel-fish/edit/main/README.md)
+>
+>![48245783026_a31896b87d_b(cropped)](https://user-images.githubusercontent.com/116954333/235949163-c7f2cde3-ab6b-433b-a251-bc92d1c75438.jpg) ![fishing-887523_1280](https://user-images.githubusercontent.com/116954333/235949232-8791fbd6-aa3b-42bf-961b-f9a533953e20.jpg) ![48245872477_f61c356e91_b(cropped)](https://user-images.githubusercontent.com/116954333/235949271-b819a045-c9bb-400a-a13d-935e0ba3b0c0.jpg)
+>
+>
+>
+>Katso koko tarjouskatalogimme [tästä linkistä](https://github.com/JRissanen/h4-Sequel-fish/blob/main/README.md)
 >
 >
 >
