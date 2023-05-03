@@ -133,8 +133,7 @@ Kerratessani aiempaa PortSwiggerin artikkelia [SQL -injektioista](https://portsw
 
 ![Screenshot_2](https://user-images.githubusercontent.com/116954333/235494310-bd335808-f4b0-4734-9325-3628412aebed.png)
 
-Menin siis labran verkkokaupan etusivulta kohtaan "My account" ja siellä syötin käyttäjänimeksi `administrator'--` ja salasanaksi `admin`, vaikka salasanaksi olisi voinut kirjoittaa ihan mitä tahansa, koska `--` parametri kommentoi sen pois. </br>
-Labra meni läpi.
+Menin siis labran verkkokaupan etusivulta kohtaan "My account" ja siellä syötin käyttäjänimeksi `administrator'--` ja salasanaksi `admin`, vaikka salasanaksi olisi voinut kirjoittaa ihan mitä tahansa, koska `--` parametri kommentoi sen pois. Labra meni läpi.
 
 ![Screenshot_3](https://user-images.githubusercontent.com/116954333/235499918-99ab5826-d358-4d0c-8960-ed4b277ad030.png)
 
@@ -144,7 +143,26 @@ Labra meni läpi.
 
 ## c) SQL injection UNION attack, determining the number of columns returned by the query.
 
+Aloitin lukemalla labran ohjeistuksen.
 
+![Screenshot_1](https://user-images.githubusercontent.com/116954333/235911034-8101d720-ef8e-4096-a38f-9b09a7a76af1.png)
+
+Labran ratkaisuun vaaditaan siis UNION -hyökkäyksen käyttämistä, jotta saadaan selville sarakkeiden määrä. </br>
+Ohjeistuksessa myös mainitaan, että sivun haavoittuvuus on tuotteiden kategoarialajittelijassa (product category filter).
+
+Aloitin avaamalla labran ja valitsemalla etusivulta "Corporate gifts" välilehden, jolloin huomasin hakukentän tekstissä `/filter?category=Corporate+gifts` osion, ja ajattelin, että siitä on hyvä lähteä kokeilemaan haavoittuvuuden löytymistä.
+
+![Screenshot_2](https://user-images.githubusercontent.com/116954333/235913070-cf68a054-40d9-4d61-9365-c914e8780971.png)
+
+Ensimmäisenä lähdin kokeilemaan tiivistämässäni PortsSwiggerin [SQL injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks) artikkelissa opetettua `' ORDER BY 1--` metodia. </br>
+Syötin siis hakukenttään: `category='+ORDER+BY+1--`.
+
+![Screenshot_3](https://user-images.githubusercontent.com/116954333/235915113-57e0917a-b75e-4638-876d-29c1a14297c9.png)
+
+Tästä ei seurannut mitään ihmeellistä tulostusta, mutta artikkelissa sanottiin, että pitäisi syöttää samaa syötettä, mutta korottaa vain viimeistä numeroa aina yhdellä, kunnes verkkosivu antaa virhetulostuksen, tai ei tulosta enää mitääm, joten kokeilin sitä suraavaksi. </br>
+Kun pääsin neljään asti, verkkosivu antoi "Internal Server Errorin", joten päättelin, että tietokannassa on kolme saraketta.
+
+![Screenshot_4](https://user-images.githubusercontent.com/116954333/235916548-8d70d1ea-2c28-467e-850f-1e49fc276518.png)
 
 
 
