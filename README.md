@@ -215,7 +215,8 @@ Aloitin lukemalla labran ohjeistuksen.
 
 Tässä labrassa on tietokanta, joka sisältää taulukon "users", jossa on sarakkeet "username" ja "password". </br>
 Tarkoitus on siis hyödyntää näitä tietoja samaan haavoittuvuuteen, eli tuotteiden kategoarialajittelijaan (product category filter). </br>
-Ajattelin ensiksi koittaa hyödyntää aiemmassa [SQL injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks) artikkelissa opetettua logiikkaa: `SELECT a, b FROM table1 UNION SELECT c, d FROM table2`. </br>
+Ajattelin ensiksi koittaa hyödyntää aiemmassa [SQL injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks) artikkelissa opetettua logiikkaa: </br>
+`SELECT a, b FROM table1 UNION SELECT c, d FROM table2`. </br>
 Eli ensimmäinen kokeiluni oli `'+UNION+SELECT+'administrator',+''+FROM+users`.
 
 
