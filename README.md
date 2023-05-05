@@ -216,16 +216,31 @@ Aloitin lukemalla labran ohjeistuksen.
 Tässä labrassa on tietokanta, joka sisältää taulukon "users", jossa on sarakkeet "username" ja "password". </br>
 Tarkoitus on siis hyödyntää näitä tietoja samaan haavoittuvuuteen, eli tuotteiden kategoarialajittelijaan (product category filter). </br>
 Ajattelin ensiksi koittaa hyödyntää aiemmassa [SQL injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks) artikkelissa opetettua logiikkaa: </br>
-`SELECT a, b FROM table1 UNION SELECT c, d FROM table2`. </br>
-Eli ensimmäinen kokeiluni oli `'+UNION+SELECT+'administrator',+''+FROM+users`.
+`SELECT a, b FROM table1 UNION SELECT c, d FROM table2`. 
 
+Ensin menin labran etusivulta kohtaan "Tech gifts", jonka jälkeen lisäsin sivun hakukohtaan: </br>
+`'+UNION+SELECT+'administrator',+''+FROM+users`. </br>
+Ajatukseni oli, että hakisin suoraan "administrator" käyttäjän "users" taulukosta ja jättäisin salasanan parametrin tyhjäksi. Tämä ei kuitenkaan onnistunut.
 
+![Screenshot_2](https://user-images.githubusercontent.com/116954333/236445787-86211c52-5e28-443a-a029-8bd05bec72e8.png)
 
+Labran ohjestuksessa taidettiinkin mainita, että ensin pitäisi saada kaikki käyttäjätiedot näkyviin, joten seuraava ideani  oli kokeilla syötettä: `'+UNION+SELECT+*+FROM+users`. </br>
+Ajatukseni oli, että saisin `*` parametrin avulla kaikki käyttäjät näkyviin, mutta sekään ei onnistunut.
 
+![Screenshot_3](https://user-images.githubusercontent.com/116954333/236446811-9aecb9af-b913-4750-9fc3-7ff0d7a95447.png)
 
+Tein näitä tehtäviä seuraavana päivänä edellisistä tehtävistä, joten huomasin, että olin unahtunut käyttää `--` parametriä loppuosan pois kommentoimiseen, joten koitin syöttää saman syötteen, kuin äsken, mutta lisäämällä `--` tällä kertaa loppuun. eli: `'+UNION+SELECT+*+FROM+users--` ja sain seuraavan tulostuksen:
 
+![Screenshot_4](https://user-images.githubusercontent.com/116954333/236448713-9186984e-1ba4-4391-a238-cdb831dba1b6.png)
 
+Sieltä näkyi "carlos", "wiener" ja "administrator" käyttäjien salasanat. </br>
+Kopioin "administrator" käyttäjän salasanan ja menin "My acoount" sisäänkirjautumis näkymään ja syöttämällä "administrator" käyttäjän tiedot, pääsin kirjautumaan sisään ja labra meni läpi.
 
+![Screenshot_5](https://user-images.githubusercontent.com/116954333/236449448-179408ab-435a-4bd8-a977-4476bdf76166.png)
+
+---
+
+## f) SQL injection UNION attack, retrieving multiple values in a single column.
 
 
 
