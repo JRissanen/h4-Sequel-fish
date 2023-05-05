@@ -209,6 +209,17 @@ Eli toinen sarake oli se, joka oli haavoittuvainen.
 
 ## e) SQL injection UNION attack, retrieving data from other tables.
 
+Aloitin lukemalla labran ohjeistuksen.
+
+![Screenshot_1](https://user-images.githubusercontent.com/116954333/236437372-9c17ffc5-e067-48e1-be36-844f9464d8ab.png)
+
+Tässä labrassa on tietokanta, joka sisältää taulukon "users", jossa on sarakkeet "username" ja "password". </br>
+Tarkoitus on siis hyödyntää näitä tietoja samaan haavoittuvuuteen, eli tuotteiden kategoarialajittelijaan (product category filter). </br>
+Ajattelin ensiksi koittaa hyödyntää aiemmassa [SQL injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks) artikkelissa opetettua logiikkaa: `SELECT a, b FROM table1 UNION SELECT c, d FROM table2`. </br>
+Eli ensimmäinen kokeiluni oli `'+UNION+SELECT+'administrator',+''+FROM+users`.
+
+
+
 
 
 
