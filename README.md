@@ -262,7 +262,7 @@ Eli käyttämälla "double-pipe" `||` parametria ja `'~'` parametria Oracle tiet
 ![Screenshot_4](https://user-images.githubusercontent.com/116954333/236621822-5a413e0d-caf4-4ae8-a23e-e375ce0aec59.png)
 
 Ei toiminut tämäkään... </br>
-Labran vinkki osiossa neuvottiin katsomaan [SQL injection cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet) hyödylisiä payloadeja.
+Labran vinkki osiossa neuvottiin katsomaan [SQL injection cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet) hyödylisiä payloadeja. </br>
 Kokeilin seuraavaksi muokata vähän syötettä esimerkiksi:
 
 `'+UNION+SELECT+username+||+~+||+password+FROM+users--` </br>
