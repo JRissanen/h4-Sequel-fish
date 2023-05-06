@@ -118,14 +118,12 @@ Sähköposti näyttäisi jotakuinkin seuraavalta:
 >
 >
 >
-> Katso koko tarjouskatalogimme [tästä linkistä](https://github.com/JRissanen/h4-Sequel-fish/blob/main/README.md)
->
 > Suosittelemme myös lataamaan uutiskirjeen alennukset.xlsx Excel-taulukon, josta näet tarkat alennus prosentit ja säästetyt eurot.
 >
 > Ystävällisin terveisin, </br>
 > Kalaveikot Oy
 
-Näin saattaisin saada Simon klikkaamaan naamioimaani haitallista linkkiä, josta latautuisi oikeasti excel-taulukko haitallisilla macroilla.
+Näin saattaisin saada Simon lataamaan haitallisen Excel-taulukon, josta menisi päälle haitalliset macrot.
 
 ---
 
