@@ -247,7 +247,7 @@ Aloitin lukemalla labran ohjeistuksen.
 ![Screenshot_1](https://user-images.githubusercontent.com/116954333/236620996-6a90276f-7f62-411d-80f5-272a24839e41.png)
 
 Tässä labrassa on sama ohjeistus kuin viime labrassakin. </br>
-Menin etusivulta kohtaan "Corporate & gifts" ja ajattelin kokeilla samalla syötteellä, jolla edellinen labra ratkesi, eli: </br>
+Menin etusivulta kohtaan "Corporate gifts" ja ajattelin kokeilla samalla syötteellä, jolla edellinen labra ratkesi, eli: </br>
 `'+UNION+SELECT+*+FROM+users--`.
 
 ![Screenshot_2](https://user-images.githubusercontent.com/116954333/236621274-c9ac87b7-15f0-44c8-be70-519e0a5f0f6f.png)
@@ -279,16 +279,45 @@ En keksinyt enää enempää kokeiltavaa, joten katsoin labran ratkaisun.
 
 Eli en ollut osannut sijoittaa `NULL` arvoa `SELECT` parametrin jälkeen, joten siksi yksikään syötteistäni ei mennyt läpi. </br>
 En osaa sanoa, miksi `NULL` arvo on pakollinen, eikä sitä ratkaisussakaan selitetä... </br>
+Tutkin asiaa ja löysin samasta [SQL injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks) artikkelista kohdan:
+
+![Screenshot_8](https://user-images.githubusercontent.com/116954333/236625198-e5598011-d629-47ae-94da-4320599887d2.png)
+
+Eli ilmeisesti jokaisen `UNION` hyökkäyksen tietotyypin on vastattava `SELECT` kyselyllä lähetettävää tietokannasta haettavan sarakkeen tietotyyppiä. `NULL` arvo vastaa kaikkia yleisimpiä tietotyypejä, joten sen käyttäminen maksimoi hyökkäyksen onnistumisen.
 
 Syötin sitten ratkaisu syötteen sivun hakukenttään ja sain käyttäjänimet ja salasanat näkyviin. </br>
 Kirjauduin "administrator" käyttäjänä sisään kohdasta "My account" ja labra meni läpi.
 
 ![Screenshot_6](https://user-images.githubusercontent.com/116954333/236623449-b6dd301d-61cd-43fc-8e45-13cc698f724d.png)
+
 ![Screenshot_7](https://user-images.githubusercontent.com/116954333/236623503-2d03183e-9574-4f67-b419-581bc232207a.png)
 
 ---
 
 ## g) SQL injection attack, querying the database type and version on Oracle.
+
+Aloitin lukemalla labran ohjeistuksen.
+
+![Screenshot_1](https://user-images.githubusercontent.com/116954333/236623880-11758aaf-97e8-4373-9723-9f367c4828c6.png)
+
+Eli tässä labrassa pitää saada tietokannan versio selville. </br>
+Heti labran avattua, sivulla näkyy lisäohjeistusta:
+
+![Screenshot_2](https://user-images.githubusercontent.com/116954333/236624082-badb90dc-683b-43ee-a3ac-b7d67c068d91.png)
+
+Lisäohjeistuksesta (ja aiemmista labroista) päätellen kyseessä on ainakin Oracle tietokanta, joten katsomalla [SQL injection cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet), voin ainakin käyttää Oracleen toimivia payloadeja. </br>
+Sieltä löysinkin seuraavan syötteen:
+
+![Screenshot_3](https://user-images.githubusercontent.com/116954333/236624314-c8ddb9ea-13be-4ea3-b7e7-9ca530808129.png)
+
+Menin siis taas etusivulta "Corporate gifts" ja kokeilin ensimmäiseksi syöttää hakukenttään: </br>
+`'+UNION+SELECT+banner+FROM+v$version`. Ei toiminut. </br>
+Kokeilin myös toista vaihtoehtoa: `'+UNION+SELECT+version+FROM+v$instance`. Sekään ei toiminut... </br>
+Kokeilin molempia myös `--` parametrin kanssa, mutta sillä ei ollut vaikutusta.
+
+
+
+
 
 
 
