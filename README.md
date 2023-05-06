@@ -123,7 +123,7 @@ Sähköposti näyttäisi jotakuinkin seuraavalta:
 >Ystävällisin terveisin, </br>
 >Kalaveikot Oy
 
-Näin saattaisin saada Simon klikkaamaan naamioimaani haitallista linkkiä.
+Näin saattaisin saada Simon klikkaamaan naamioimaani haitallista linkkiä, josta latautuisi oikeasti excel-taulukko haitallisilla macroilla.
 
 ---
 
