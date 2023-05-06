@@ -242,8 +242,17 @@ Kopioin "administrator" käyttäjän salasanan ja menin "My acoount" sisäänkir
 
 ## f) SQL injection UNION attack, retrieving multiple values in a single column.
 
+Aloitin lukemalla labran ohjeistuksen.
 
+![Screenshot_1](https://user-images.githubusercontent.com/116954333/236620996-6a90276f-7f62-411d-80f5-272a24839e41.png)
 
+Tässä labrassa on sama ohjeistus kuin viime labrassakin. </br>
+Menin etusivulta kohtaan "Corporate & gifts" ja ajattelin kokeilla samalla syötteellä, jolla edellinen labra ratkesi, eli: </br>
+`'+UNION+SELECT+*+FROM+users--`.
+
+![Screenshot_2](https://user-images.githubusercontent.com/116954333/236621274-c9ac87b7-15f0-44c8-be70-519e0a5f0f6f.png)
+
+Ei ratkennut sentään samalla syötteellä, joten jotain täytyy tehdä eritavalla tällä kertaa. </br>
 
 
 
