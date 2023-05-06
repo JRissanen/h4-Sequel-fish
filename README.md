@@ -102,26 +102,28 @@ Naamioisin kalastelusähköpostin näyttämään mahdollisimman paljon joltakin 
 
 Sähköposti näyttäisi jotakuinkin seuraavalta:
 
+> Aihe: Kalaveikkojen uutiskirje 
+>
 > Lähettäjä: kala.veikot@kala&veikot.com </br>
 > Vastaanottaja: simo.mottonen@tieto&turva.com
 >
 >
 >
->Terve Simo! </br>
->Olemme keränneet tähän uutiskirjeeseen alennustuotteita, jotka saattaisivat kiinnostaa sinua aiempien ostoksiesi perusteella:
+> Terve Simo! </br>
+> Olemme keränneet tähän uutiskirjeeseen alennustuotteita, jotka saattaisivat kiinnostaa sinua aiempien ostoksiesi perusteella:
 >
 >
 >
->![48245783026_a31896b87d_b(cropped)](https://user-images.githubusercontent.com/116954333/235949163-c7f2cde3-ab6b-433b-a251-bc92d1c75438.jpg) ![fishing-887523_1280](https://user-images.githubusercontent.com/116954333/235949232-8791fbd6-aa3b-42bf-961b-f9a533953e20.jpg) ![48245872477_f61c356e91_b(cropped)](https://user-images.githubusercontent.com/116954333/235949271-b819a045-c9bb-400a-a13d-935e0ba3b0c0.jpg)
+> ![48245783026_a31896b87d_b(cropped)](https://user-images.githubusercontent.com/116954333/235949163-c7f2cde3-ab6b-433b-a251-bc92d1c75438.jpg) ![fishing-887523_1280](https://user-images.githubusercontent.com/116954333/235949232-8791fbd6-aa3b-42bf-961b-f9a533953e20.jpg) ![48245872477_f61c356e91_b(cropped)](https://user-images.githubusercontent.com/116954333/235949271-b819a045-c9bb-400a-a13d-935e0ba3b0c0.jpg)
 >
 >
 >
->Katso koko tarjouskatalogimme [tästä linkistä](https://github.com/JRissanen/h4-Sequel-fish/blob/main/README.md)
+> Katso koko tarjouskatalogimme [tästä linkistä](https://github.com/JRissanen/h4-Sequel-fish/blob/main/README.md)
 >
+> Suosittelemme myös lataamaan uutiskirjeen alennukset.xlsx Excel-taulukon, josta näet tarkat alennus prosentit ja säästetyt eurot.
 >
->
->Ystävällisin terveisin, </br>
->Kalaveikot Oy
+> Ystävällisin terveisin, </br>
+> Kalaveikot Oy
 
 Näin saattaisin saada Simon klikkaamaan naamioimaani haitallista linkkiä, josta latautuisi oikeasti excel-taulukko haitallisilla macroilla.
 
