@@ -318,7 +318,8 @@ En löytänyt [Cheat sheet]((https://portswigger.net/web-security/sql-injection/
 
 ![Screenshot_4](https://user-images.githubusercontent.com/116954333/236626135-116a7b20-d82f-4261-8e47-e7e57ab67067.png)
 
-Vinkissä viitataaan samaan asiaan, jolla viime labra ratkesi, eli `NULL` arvon laittaminen syötteeseen, joka minulta puuttui viimeksikin. Ajattelin siis seuraavaksi koittaa viime labran ratkaisussa toiminutta logiikkaa, eli: </br>
+Vinkissä viitataaan samaan asiaan, jolla viime labra ratkesi, eli `NULL` arvon laittaminen syötteeseen, joka minulta puuttui viimeksikin. </br>
+Ajattelin siis seuraavaksi koittaa viime labran ratkaisussa toiminutta logiikkaa, eli: </br>
 `'+UNION+SELECT+banner,+NULL+FROM+v$version--`. Ja labra meni sillä läpi.
 
 ![Screenshot_5](https://user-images.githubusercontent.com/116954333/236627461-97a67df0-fa27-4e79-8290-d18c73e33bd1.png)
