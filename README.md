@@ -305,8 +305,7 @@ Heti labran avattua, sivulla näkyy lisäohjeistusta:
 
 ![Screenshot_2](https://user-images.githubusercontent.com/116954333/236624082-badb90dc-683b-43ee-a3ac-b7d67c068d91.png)
 
-Lisäohjeistuksesta (ja aiemmista labroista) päätellen kyseessä on ainakin Oracle tietokanta, joten katsomalla [SQL injection cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet), voin ainakin käyttää Oracleen toimivia payloadeja. </br>
-Sieltä löysinkin seuraavan syötteen:
+Lisäohjeistuksesta (ja aiemmista labroista) päätellen kyseessä on ainakin Oracle tietokanta, joten katsomalla [SQL injection cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet), voin ainakin käyttää Oracleen toimivia payloadeja. Sieltä löysinkin seuraavan syötteen:
 
 ![Screenshot_3](https://user-images.githubusercontent.com/116954333/236624314-c8ddb9ea-13be-4ea3-b7e7-9ca530808129.png)
 
@@ -315,33 +314,14 @@ Menin siis taas etusivulta "Corporate gifts" ja kokeilin ensimmäiseksi syöttä
 Kokeilin myös toista vaihtoehtoa: `'+UNION+SELECT+version+FROM+v$instance`. Sekään ei toiminut... </br>
 Kokeilin molempia myös `--` parametrin kanssa, mutta sillä ei ollut vaikutusta.
 
+En löytänyt [Cheat sheet]((https://portswigger.net/web-security/sql-injection/cheat-sheet) -sivulta enempää tämän labran kannalta hyödyllisiä syötteitä, joten ajattelin katsoa labran vinkin, jos se olisi hyödyllisempi tällä kertaa kuin edellisessä labrassa.
 
+![Screenshot_4](https://user-images.githubusercontent.com/116954333/236626135-116a7b20-d82f-4261-8e47-e7e57ab67067.png)
 
+Vinkissä viitataaan samaan asiaan, jolla viime labra ratkesi, eli `NULL` arvon laittaminen syötteeseen, joka minulta puuttui viimeksikin. Ajattelin siis seuraavaksi koittaa viime labran ratkaisussa toiminutta logiikkaa, eli: </br>
+`'+UNION+SELECT+banner,+NULL+FROM+v$version--`. Ja labra meni sillä läpi.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot_5](https://user-images.githubusercontent.com/116954333/236627461-97a67df0-fa27-4e79-8290-d18c73e33bd1.png)
 
 
 ## Lähteet
@@ -351,17 +331,5 @@ https://www.influenceatwork.com/about-iaw/ </br>
 https://portswigger.net/web-security/sql-injection/union-attacks </br>
 https://portswigger.net/web-security/all-labs </br>
 https://portswigger.net/web-security/sql-injection </br>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
